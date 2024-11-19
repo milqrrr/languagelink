@@ -116,3 +116,35 @@ document.querySelectorAll('.star').forEach(star => {
     });
 });
 
+// Получаем элементы
+const themeToggleButton = document.getElementById("theme-toggle");
+const body = document.body;
+
+// Проверяем сохранённую тему в LocalStorage
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+    body.classList.add(savedTheme);
+    updateThemeButtonText(savedTheme);
+}
+
+// Слушатель для смены темы
+themeToggleButton.addEventListener("click", () => {
+    if (body.classList.contains("dark-theme")) {
+        // Переключаем на светлую тему
+        body.classList.remove("dark-theme");
+        body.classList.add("light-theme");
+        localStorage.setItem("theme", "light-theme");
+        updateThemeButtonText("light-theme");
+    } else {
+        // Переключаем на тёмную тему
+        body.classList.remove("light-theme");
+        body.classList.add("dark-theme");
+        localStorage.setItem("theme", "dark-theme");
+        updateThemeButtonText("dark-theme");
+    }
+});
+
+// Обновление текста кнопки
+function updateThemeButtonText(theme) {
+    themeToggleButton.textContent = theme === "dark-theme" ? "🌞 Light Mode" : "🌙 Dark Mode";
+}

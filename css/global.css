@@ -183,3 +183,210 @@ footer {
     color: #fff;
     font-size: 0.9rem;
 }
+
+/* Тёмная тема */
+body.dark-theme {
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+body.dark-theme a {
+    color: #90caf9; /* Синий для ссылок */
+}
+
+body.dark-theme button, .btn {
+    background-color: #424242;
+    color: #e0e0e0;
+    border: 1px solid #616161;
+}
+
+body.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #9e9e9e;
+}
+
+/* Светлая тема */
+body.light-theme {
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333; /* Тёмный текст */
+}
+
+body.light-theme a {
+    color: #007bff; /* Ссылки в светлой теме */
+}
+
+body.light-theme button, .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+}
+
+body.light-theme footer {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Тёмная тема */
+body.dark-theme {
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+body.dark-theme a {
+    color: #90caf9; /* Ссылки в тёмной теме */
+}
+
+body.dark-theme button, .btn {
+    background-color: #424242;
+    color: #e0e0e0;
+    border: 1px solid #616161;
+}
+
+body.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #9e9e9e;
+}
+
+/* Секции */
+body.dark-theme section {
+    background-color: #1e1e1e; /* Тёмный фон для секций */
+    color: #e0e0e0; /* Светлый текст */
+    border-radius: 10px; /* Добавление скруглений для эстетики */
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Блок цитат */
+body.dark-theme blockquote {
+    background-color: #333333; /* Тёмный фон для цитат */
+    border-left: 4px solid #90caf9; /* Голубая линия слева */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+/* Карточки */
+body.dark-theme .card {
+    background-color: #1e1e1e; /* Тёмный фон для карточек */
+    color: #e0e0e0; /* Светлый текст */
+    border: 1px solid #424242; /* Лёгкая граница */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Тёмная тема */
+body.dark-theme {
+    background-color: #121212; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+}
+
+/* Для всех текстовых элементов в тёмной теме */
+body.dark-theme h1, 
+body.dark-theme h2, 
+body.dark-theme h3, 
+body.dark-theme p, 
+body.dark-theme span, 
+body.dark-theme blockquote, 
+body.dark-theme ul li, 
+body.dark-theme dl dt, 
+body.dark-theme dl dd {
+    color: #e0e0e0 !important; /* Светлый текст */
+}
+
+/* Ссылки */
+body.dark-theme a {
+    color: #90caf9 !important; /* Голубой текст для ссылок */
+}
+
+body.dark-theme a:hover {
+    color: #64b5f6; /* Более светлый голубой при наведении */
+}
+
+/* Секции */
+body.dark-theme section {
+    background-color: #1e1e1e; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Блоки цитат */
+body.dark-theme blockquote {
+    background-color: #333333;
+    border-left: 4px solid #90caf9;
+    color: #e0e0e0;
+    padding: 1rem;
+    font-style: italic;
+}
+
+/* Карточки */
+body.dark-theme .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #424242;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопки */
+body.dark-theme button, 
+body.dark-theme .btn {
+    background-color: #424242;
+    color: #e0e0e0;
+    border: 1px solid #616161;
+}
+
+body.dark-theme button:hover, 
+body.dark-theme .btn:hover {
+    background-color: #616161;
+    color: #ffffff;
+}
+
+/* Подвал */
+body.dark-theme footer {
+    background-color: #1e1e1e;
+    color: #9e9e9e;
+}
+
+/* Для списков */
+body.dark-theme ul, 
+body.dark-theme ol, 
+body.dark-theme li {
+    color: #e0e0e0;
+}
+
+/* Для заголовков и текста в карточках */
+body.dark-theme .card h2, 
+body.dark-theme .card h3, 
+body.dark-theme .card p {
+    color: #e0e0e0 !important;
+}
+
+/* Для секции с ID studentList */
+body.dark-theme #studentList {
+    background-color: #1e1e1e; /* Тёмный фон */
+    color: #e0e0e0; /* Светлый текст */
+    padding: 1rem; /* Внутренние отступы */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Для карточек внутри секции */
+body.dark-theme .student-card {
+    background-color: #2c2c2c; /* Ещё более тёмный фон для карточек */
+    color: #e0e0e0; /* Светлый текст */
+    border: 1px solid #424242; /* Граница карточек */
+    border-radius: 10px; /* Скругление углов */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для объёма */
+}
+
+/* Изображения в карточках */
+body.dark-theme .student-photo {
+    border: 2px solid #90caf9; /* Голубая рамка для акцента */
+}
+
+/* Заголовки и текст в карточках */
+body.dark-theme .student-card h3 {
+    color: #ffffff; /* Белый цвет текста */
+}
+
+body.dark-theme .student-card p {
+    color: #e0e0e0; /* Светлый текст */
+}
