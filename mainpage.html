@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс английского языка - Главная</title>
+    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="mainpage.html">LangSchool</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="about.html">О курсе</a>
+                  <a class="nav-link" href="reviews.html">Отзывы студентов</a>
+                  <a class="nav-link" id="profileLink" href="user.html">Профиль</a>
+                </div>
+                <button id="logoutBtn" class="btn btn-outline-danger ms-auto" style="display: none">
+                  Logout
+                </button>
+              </div>
+              <!-- Theme Toggle Button -->
+              <div class="theme-toggle-wrapper">
+                <button id="theme-toggle" class="btn btn-outline-light">
+                  🌙 Dark Mode
+                </button>
+              </div>
+            </div>
+          </nav>
+    </header>
+    
+    
+
+    <main>
+        <section>
+            <h2 style="text-align: center;">Добро пожаловать в мир английского языка!</h2>
+            <p>Погрузитесь в увлекательное путешествие по изучению английского языка с нашими инновационными курсами, разработанными для того, чтобы сделать обучение <span class="highlight">интересным</span> и <span class="highlight">эффективным</span>. Наши курсы включают интерактивные занятия, практику с носителями языка и множество ресурсов для самоподготовки.</p>
+            <p>Присоединяйтесь к нам и откройте для себя <span class="highlight">новые горизонты</span> возможностей, которые откроет вам знание английского языка. Независимо от вашего уровня, мы поможем вам достичь ваших языковых целей!</p>
+            
+            
+        </section>
+    
+        <section id="user-info" style="display:none;">
+            <h2>Привет, <span id="user-name-display"></span>!</h2>
+            <button id="logout-btn" class="btn btn-secondary">Выйти</button>
+        </section>
+
+        <figure>
+            <figcaption>Присоединяйтесь к нам и изучайте английский с удовольствием!</figcaption>
+        </figure>
+
+        <ul>
+            <blockquote>
+                "Учите английский язык с удовольствием и откройте для себя новые возможности в жизни!"
+            </blockquote>
+            <li>Основы грамматики и лексики</li>
+            <li>Разговорная практика с носителями языка</li>
+            <li>Интерактивные упражнения и тесты</li>
+        </ul>
+
+        <dl>
+            <dt>Курс для начинающих</dt>
+            <dd>Идеально подходит для тех, кто только начинает изучать английский язык.</dd>
+            <dt>Продвинутый курс</dt>
+            <dd>Для студентов, стремящихся улучшить свои навыки и уверенность в языке.</dd>
+        </dl>
+
+        <section class="card contact-info">
+            <div class="card-body"> 
+                <h2>Контактная информация</h2>
+                <p>Если у вас есть вопросы или вы хотите записаться на курс, свяжитесь с нами по электронной почте:</p>
+                <p><a href="mailto:azamatovnamilana0@gmail.com">azamatovnamilana0@gmail.com</a></p>
+            </div>
+        </section>
+    </main>
+    <div class="rating-container">
+        <p class="rating-text">Оцените наш курс</p>
+        <div class="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+    </div>
+    
+
+
+    <footer>
+        <p>Астана, 2024. Контактная информация: azamatovnamilana0@gmail.com</p>
+    </footer>
+
+    
+    <script src="scripts/mainpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/login.js"></script>
+   
+
+</body>
+</html>
+
+

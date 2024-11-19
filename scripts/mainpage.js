@@ -1,17 +1,18 @@
 // Функция для обновления даты и времени
+// Функция для установки текущей даты
 function updateDateTime() {
+    const datetime = document.getElementById("datetime");
     const now = new Date();
-    const options = { 
-        year: 'numeric', 
-        month: 'long', 
-        day: 'numeric', 
-        hour: 'numeric', 
-        minute: 'numeric', 
-        hour12: true 
-    };
-    const formattedDateTime = now.toLocaleString('ru-RU', options);
-    document.getElementById('datetime').innerText = `Текущая дата и время: ${formattedDateTime}`;
+    datetime.textContent = now.toLocaleDateString('ru-RU', {
+        day: '2-digit',
+        month: '2-digit',
+        year: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
 }
+
+
 
 // Обновление даты и времени каждую секунду
 setInterval(updateDateTime, 1000);

@@ -4,38 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Отзывы студентов</title>
+    <link rel="stylesheet" href="css/reviews.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/nav.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="styless.css">
 </head>
+
 <body>
     <header>
-        <h1>Отзывы студентов</h1>
-        <nav class="navbar">
-            <a href="index.html" class="btn btn-outline-light">Главная</a>
-        </nav>
-    
-
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="mainpage.html">LangSchool</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="about.html">О курсе</a>
+                  <a class="nav-link" href="reviews.html">Отзывы студентов</a>
+                  <a class="nav-link" id="profileLink" href="user.html">Профиль</a>
+                </div>
+                <button id="logoutBtn" class="btn btn-outline-danger ms-auto" style="display: none">
+                  Logout
+                </button>
+              </div>
+              <!-- Theme Toggle Button -->
+              <div class="theme-toggle-wrapper">
+                <button id="theme-toggle" class="btn btn-outline-light">
+                  🌙 Dark Mode
+                </button>
+              </div>
+            </div>
+          </nav>
     </header>
-
-    <button id="theme-toggle" class="btn btn-secondary">Light/Dark Mode</button>
-   
-    
 
 
     <main class="container">
         <section>
             <h2>Наша гордость - студенты</h2>
-            <div id="studentList" class="row"></div> 
+            <div id="studentList" class="row">
+                <!-- Карточки студентов -->
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/myphoto.jpg" alt="Milana Azamatovna" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Milana Azamatovna</h3>
+                                <p>"Это лучший курс, который я посещала!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/alua.jpg" alt="Maxatova Alua" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Maxatova Alua</h3>
+                                <p>"Этот курс английского языка значительно улучшил мои навыки общения. Спасибо за потрясающие занятия!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/kolya.jpg" alt="KOLYA" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>KOLYA</h3>
+                                <p>"Я наконец-то чувствую себя уверенно, говоря на английском. Это лучший курс, который я посещала!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/alina.jpg" alt="Alina Muldagalieva" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Alina Muldagalieva</h3>
+                                <p>"Методика преподавания на высшем уровне, теперь я понимаю все нюансы грамматики. Рекомендую!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/marlen.jpg" alt="Марлен" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Марлен</h3>
+                                <p>"Этот курс помог мне улучшить мои разговорные навыки!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/kolya.jpg" alt="Коля" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Коля</h3>
+                                <p>"Я наконец-то чувствую себя уверенно на уроках!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/darkhan.jpg" alt="Дархан" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Дархан</h3>
+                                <p>"Курс действительно интересный и полезный!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/dias.jpg" alt="Диас" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Диас</h3>
+                                <p>"Мне очень нравится, как нас обучают!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="student-card">
+                        <div class="d-flex align-items-center">
+                            <img src="images/baglan.jpg" alt="Баглан" class="student-photo" style="width: 100px; height: 100px; border-radius: 50%;">
+                            <div class="ms-3">
+                                <h3>Баглан</h3>
+                                <p>"Отличный курс, рекомендую всем!"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer class="text-center mt-4">
-        <p>&copy; 2024. Курс английского языка.</p>
+    <footer>
+        <p>Астана, 2024. Контактная информация: azamatovnamilana0@gmail.com</p>
     </footer>
 
-    <script src="script3.js"></script> 
-  
-
-
+    <script src="scripts/theme-toggle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/login.js"></script>
 </body>
 </html>

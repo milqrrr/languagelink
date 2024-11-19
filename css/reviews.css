@@ -1,0 +1,110 @@
+.student-card:hover {
+    transform: translateY(-5px);
+    transition: transform 0.2s ease;
+}
+
+/* Карточки студентов */
+.student-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.student-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.student-card h3 {
+    font-size: 1.2rem;
+    color: #007aff;
+}
+
+.student-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Стили для контейнера с карточками */
+#studentList {
+    display: grid; /* Включаем Grid Layout */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Колонки фиксированной ширины */
+    gap: 2rem; /* Расстояние между карточками */
+    padding: 1rem; /* Внутренние отступы для контейнера */
+    justify-content: center; /* Центрируем карточки в сетке */
+}
+
+/* Стили для карточек */
+.student-card {
+    background-color: #fff; /* Белый фон */
+    border: 1px solid #ddd; /* Легкая граница */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень */
+    padding: 1.5rem; /* Внутренние отступы */
+    display: flex;
+    flex-direction: column; /* Вертикальное расположение содержимого */
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: space-between; /* Равномерное распределение содержимого */
+    width: 420px; /* Фиксированная ширина карточки */
+    height: 300px; /* Фиксированная высота карточки */
+    text-align: center; /* Выравнивание текста по центру */
+    overflow: hidden; /* Убираем содержимое, выходящее за границы */
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+}
+
+/* Анимация при наведении */
+.student-card:hover {
+    transform: translateY(-5px); /* Лёгкое поднятие */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Более сильная тень */
+}
+
+/* Стили для изображений */
+.student-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Круглая форма */
+    margin-bottom: 1rem; /* Отступ снизу */
+    object-fit: cover; /* Обрезка изображения, чтобы оно не выходило за границы */
+    border: 2px solid #007bff; /* Голубая рамка для акцента */
+}
+
+/* Стили для заголовков */
+.student-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    white-space: nowrap; /* Убираем переносы строк */
+    overflow: hidden; /* Скрываем текст, выходящий за пределы */
+    text-overflow: ellipsis; /* Добавляем троеточие для длинных заголовков */
+}
+
+/* Стили для текста */
+.student-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5; /* Улучшение читаемости */
+    max-height: 4.5rem; /* Ограничение высоты текста */
+    overflow: hidden; /* Скрытие текста, если он слишком длинный */
+    text-overflow: ellipsis; /* Троеточие для длинного текста */
+    white-space: normal; /* Разрешаем перенос текста */
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 768px) {
+    #studentList {
+        grid-template-columns: 1fr; /* Одна колонка на малых экранах */
+    }
+
+    .student-card {
+        width: 100%; /* На малых экранах карточка занимает всю ширину */
+        max-width: 320px; /* Максимальная ширина карточки */
+    }
+}
