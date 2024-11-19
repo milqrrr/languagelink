@@ -1,0 +1,264 @@
+body { 
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.pinimg.com/564x/dd/eb/e9/ddebe9d412c2b05b24d90c988d661fe1.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    font-size: 14px; 
+}
+
+header, footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1em; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #1E3A8A;
+    font-size: 0.9em; 
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+main {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #1E3A8A;
+    font-size: 1em; 
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+blockquote {
+    font-size: 1.1em; 
+    font-weight: bold;
+    color: #E11D48;
+    text-align: center;
+    margin: 20px 0;
+    border-left: 4px solid #E11D48; 
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+ul, dl {
+    font-size: 1em; 
+    margin: 10px 0;
+}
+
+.contact-info {
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1em; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    font-size: 0.9em; 
+}
+
+h2 {
+    color: #E11D48; 
+    font-size: 2em; 
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 0.9em; 
+}
+
+.highlight {
+    color: #E11D48; 
+    font-weight: bold;
+}
+
+a {
+    color: #fff; 
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+}
+
+#datetime {
+    background: white; 
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #ff69b4; 
+    color: #333; 
+    font-size: 20px; 
+    text-align: center; 
+    max-width: 400px; 
+    margin: 20px auto; 
+}
+
+.rating-container {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 8px;
+    background-color: #fffbe6;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.rating-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.rating-container:hover {
+    transform: scale(1.05);
+}
+
+
+/* Стили для формы входа */
+#login-section {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#login-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+#login-form .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+#login-form input {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#login-form button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Стили для информации о пользователе */
+#user-info {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #eaf7e9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#user-info h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #2d7a2d;
+}
+
+#logout-btn {
+    display: block;
+    width: 100%;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+
+/* Стили для темного режима */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+    padding: 0;
+}
+
+/* Изменяем отступы */
+.main.dark-mode,
+.container.dark-mode {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Пример изменения фона секций и отступов */
+header.dark-mode,
+footer.dark-mode,
+nav.dark-mode,
+section.dark-mode {
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin: 0;
+}
+
+/* Пример изменения рамок */
+.card.dark-mode {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border: 1px solid #444;
+}
+
+/* Другие элементы, которые хотите изменить в темном режиме */
+blockquote.dark-mode {
+    border-left: 5px solid #444;
+}
+/* Светлый режим - стандартные стили */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Темный режим - изменяем цвета для текста и фона */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Изменение цвета ссылок в темном режиме */
+a {
+    color: #000000;
+}
+
+a.dark-mode {
+    color: #ffffff;
+}

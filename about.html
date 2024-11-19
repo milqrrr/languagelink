@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курс английского языка - О курсе</title>
+    <link rel="stylesheet" href="styles3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="animate__animated animate__fadeInDown">Курс английского языка</h1>
+        <nav>
+            <a href="index.html" class="animate__animated animate__fadeInLeft">Главная</a>
+            <a href="about.html" class="animate__animated animate__fadeInRight">О курсе</a>
+        </nav>
+    </header>
+    <h1 class="animate__animated animate__bounce animate__infinite">Курс английского языка</h1>
+
+    
+    <button id="theme-toggle" class="animate__animated animate__pulse">Light Mode</button> <!-- Кнопка с анимацией -->
+    
+<button id="theme-toggle">Dark Mode</button> <!-- Кнопка для переключения темы -->
+
+
+
+<main>
+    <section>
+        <h2>О нашем курсе</h2>
+        <p>Наш курс разработан для тех, кто хочет освоить английский язык и погрузиться в культуру Америки! Мы предлагаем уникальные занятия, которые включают интерактивные упражнения, разговорную практику с носителями языка и глубокое понимание американских традиций и культуры. Присоединяйтесь к нам и сделайте обучение не только полезным, но и увлекательным!</p>
+    </section>
+
+    <div class="category-buttons">
+        <button id="adultsButton">Взрослым</button>
+        <button id="kidsButton">Детям</button>
+    </div>
+
+    <div class="faq-container" id="faqContainer" style="display: none;">
+        <div id="adultsFAQs" style="display: none;">
+            <div class="faq-item">
+                <h3 class="question">Взрослым тоже можно?</h3>
+                <div class="answer">Да, конечно, можно! Для них есть отдельная группа с адаптированной программой обучения.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Есть ли тест для определения уровня?</h3>
+                <div class="answer">Да, перед началом курса мы проводим тест, чтобы определить ваш текущий уровень и предложить наиболее подходящую программу.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Как проходит обучение?</h3>
+                <div class="answer">Обучение проходит как в офлайн-группах, так и онлайн. Уроки включают в себя практику разговорной речи, аудирование, чтение и грамматику.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Нужно ли покупать учебные материалы?</h3>
+                <div class="answer">Нет, все необходимые материалы предоставляются на курсе. Вы получите доступ к учебникам, аудиозаписям и дополнительным ресурсам онлайн.</div>
+            </div>
+        </div>
+
+        <div id="kidsFAQs" style="display: none;">
+            <div class="faq-item">
+                <h3 class="question">Какой возрастной группе подходит курс для детей?</h3>
+                <div class="answer">Курс подходит для детей от 6 до 16 лет, с различными уровнями подготовки.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Есть ли специальные занятия для маленьких детей?</h3>
+                <div class="answer">Да, для детей младшего возраста мы проводим специальные игровые занятия, которые помогают им усваивать язык в непринужденной атмосфере.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Какова продолжительность курса для детей?</h3>
+                <div class="answer">Курс для детей длится 3 месяца с занятиями два раза в неделю.</div>
+            </div>
+
+            <div class="faq-item">
+                <h3 class="question">Как проходит обучение для детей?</h3>
+                <div class="answer">Обучение для детей включает игры, песни и интерактивные задания, что делает процесс изучения языка интересным.</div>
+            </div>
+        </div>
+    </div>
+
+    <button id="openPopup">Обратная связь</button>
+
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <button class="close-btn" id="closePopup">&times;</button>
+            <h2>Форма обратной связи</h2>
+            <form id="contactForm">
+                <!-- Шаг 1 -->
+                <div class="form-step" id="step1">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="level">Ваш уровень английского:</label>
+                    <select id="level" name="level" required>
+                        <option value="beginner">Начинающий</option>
+                        <option value="intermediate">Средний</option>
+                        <option value="advanced">Продвинутый</option>
+                    </select>
+
+                    <label for="message">Ваше сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="button" id="nextStep">Далее</button>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="form-step" id="step2" style="display:none;">
+                    <label for="phone">Ваш номер:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="email">Ваша почта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="tg_nick">Ваш ник в ТГ:</label>
+                    <input type="text" id="tg_nick" name="tg_nick" required>
+
+                    <button type="button" id="prevStep">Назад</button>
+                    <button type="submit">Отправить</button>
+                    <button type="button" id="clearForm">Очистить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <div id="error"></div>
+</main>
+
+<footer>
+    <p>Астана, 2024. Контактная информация: azamatovnamilana0@gmail.com</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
